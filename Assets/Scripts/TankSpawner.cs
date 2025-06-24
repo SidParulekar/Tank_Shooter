@@ -5,11 +5,17 @@ using UnityEngine;
 public class TankSpawner : MonoBehaviour
 {
 
-    [SerializeField] private GameObject tankPrefab;
+    [SerializeField] private TankView tankView;
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(tankPrefab, transform.position, Quaternion.identity); //Creating a tank in the game scene with a specified position and rotation
+        CreateTank(); //Creating a tank in the game scene
+    }
+
+    public void CreateTank()
+    {
+        TankModel tankModel = new TankModel();
+        TankController tankController = new TankController(tankModel, tankView);
     }
 
 }
