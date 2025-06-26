@@ -47,6 +47,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 4184158740340433581}
+  tankParts:
+  - {fileID: 1830186412446112865}
+  - {fileID: 1830186412446112871}
+  - {fileID: 1830186412446112873}
+  - {fileID: 1830186412446112867}
 --- !u!54 &4184158740340433581
 Rigidbody:
   m_ObjectHideFlags: 0

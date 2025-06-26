@@ -11,6 +11,8 @@ public class TankView : MonoBehaviour
 
     [SerializeField] private Rigidbody rb;
 
+    [SerializeField] private MeshRenderer[] tankParts;
+
     public void SetTankController(TankController tankController)
     {
         this.tankController = tankController;
@@ -52,5 +54,13 @@ public class TankView : MonoBehaviour
     public Rigidbody GetRigidbody()
     {
         return rb;
+    }
+
+    public void ChangeColor(Material color)
+    {
+        for (int i = 0; i < tankParts.Length; i++)
+        {
+            tankParts[i].material = color;
+        }
     }
 }
