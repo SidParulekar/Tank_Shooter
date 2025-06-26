@@ -150,8 +150,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bee1b4118fa92504e8b18b3d8cbebbf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tankPrefab: {fileID: 1830186412448301841, guid: cd85205ec1b804d42a28f6ef6e78a9f7,
+  tankView: {fileID: 4979929534030231020, guid: cd85205ec1b804d42a28f6ef6e78a9f7,
     type: 3}
+  tankList:
+  - movementSpeed: 30
+    rotationSpeed: 25
+    tankType: 0
+    color: {fileID: 2100000, guid: 12c120f2400576c4f97a98bcca5529bc, type: 2}
+  - movementSpeed: 25
+    rotationSpeed: 40
+    tankType: 2
+    color: {fileID: 2100000, guid: ff21ff0ea9b18924bb1fdfbb0e58f5cb, type: 2}
+  - movementSpeed: 35
+    rotationSpeed: 80
+    tankType: 1
+    color: {fileID: 2100000, guid: 463052f3f7389124f9e7b34b0b931d0d, type: 2}
 --- !u!4 &466602902
 Transform:
   m_ObjectHideFlags: 0
@@ -160,7 +173,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 466602900}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.199036, y: 2.610434, z: -0.37329394}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -242,13 +255,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179543937}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.13052616, y: 0, z: 0, w: 0.9914449}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
 --- !u!1001 &1805823116
 PrefabInstance:
   m_ObjectHideFlags: 0
