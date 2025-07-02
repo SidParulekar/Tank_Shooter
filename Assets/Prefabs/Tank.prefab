@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4979929534030231020}
   - component: {fileID: 4184158740340433581}
   - component: {fileID: 1905804354548411508}
+  - component: {fileID: 3168475868136450451}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Untagged
@@ -31,6 +32,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1830186412448538365}
+  - {fileID: 1807748597834031600}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -81,6 +83,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.27, y: 1.75, z: 1.92}
   m_Center: {x: 0.03, y: 0.85, z: 0.08}
+--- !u!114 &3168475868136450451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830186412448301841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2675a603be6d634386fb1275a0e00e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerNumber: 1
+  shell: {fileID: 4107612197432441169, guid: 41d0f3ef656a1f042a994aee472693d6, type: 3}
+  fireTransform: {fileID: 1807748597834031600}
+  shootingAudio: {fileID: 0}
+  chargingClip: {fileID: 0}
+  fireClip: {fileID: 0}
+  minLaunchForce: 15
+  maxLaunchForce: 30
+  maxChargeTime: 0.75
 --- !u!1 &1830186412448301843
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,3 +459,33 @@ Transform:
   m_Father: {fileID: 1830186412448538353}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5274317882655337736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1807748597834031600}
+  m_Layer: 0
+  m_Name: FireTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1807748597834031600
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5274317882655337736}
+  m_LocalRotation: {x: 0.08715596, y: -0, z: -0, w: -0.9961947}
+  m_LocalPosition: {x: 0, y: 1.67, z: 1.76}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1830186412448538353}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 350, y: 0, z: 0}
